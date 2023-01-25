@@ -33,6 +33,3 @@ jobs:
         run: | 
           chmod +x mvnw 
           ./mvn -B package
-          
-          
-		
