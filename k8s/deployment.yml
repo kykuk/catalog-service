@@ -27,16 +27,10 @@ spec:
           env:
             - name: BPL_JVM_THREAD_COUNT
               value: "50"
+            - name: SPRING_CLOUD_CONFIG_URI
+              value: http://config-service
             - name: SPRING_DATASOURCE_URL
               value: jdbc:postgresql://polar-postgres/polardb_catalog
             - name: SPRING_PROFILES_ACTIVE
               value: testdata
-          resources:
-            requests:
-              cpu: 100m
-              memory: 60Mi
-            limits:
-              cpu: 200m
-              memory: 512Mi
-                       
-    
+ 
