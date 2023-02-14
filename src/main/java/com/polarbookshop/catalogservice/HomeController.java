@@ -7,6 +7,7 @@ import com.polarbookshop.catalogservice.config.PolarProperties;
 
 @RestController
 public class HomeController {
+	
 	private final PolarProperties polarProperties;
 	
 	public HomeController(PolarProperties polarProperties) {

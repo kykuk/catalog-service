@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Profile("testdata")
 public class BookDataLoader {
+	
 	private final BookRepository bookRepository;
 
 	public BookDataLoader(BookRepository bookRepository) {
@@ -26,4 +27,5 @@ public class BookDataLoader {
 		var book2 = Book.of("1234567892", "Polar Journey", "Iorek Polarson", 12.90, "Polarsophia");
 		bookRepository.saveAll(List.of(book1,book2));
 	}
+	
 }

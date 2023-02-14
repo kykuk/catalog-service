@@ -15,6 +15,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class BookValidationTests {
+	
 	public static Validator validator;
 	
 	@BeforeAll
@@ -102,4 +103,5 @@ public class BookValidationTests {
         Set<ConstraintViolation<Book>> violations = validator.validate(book);
         assertThat(violations).isEmpty();
     }
+    
 }
